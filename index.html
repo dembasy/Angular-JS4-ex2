@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr" />
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="assets/JS/script.js"></script>
+  </head>
+  <body ng-app='myApp' ng-controller="customersCtrl">
+    <table cellspacing="2px" cellpadding="2px;" rules="all" style="border:solid 1px black;">
+      <thead>
+        <tr>
+          <th>Marque</th>
+          <th>Couleur</th>
+        </tr>
+      </thead>
+      <tr ng-repeat="x in myData">
+      <td>{{x.marque}}</td>
+      <td>{{x.couleur}}</td>
+      </tr>
+    </table>
+  </body>
+</html>
